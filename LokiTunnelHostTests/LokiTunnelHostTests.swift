@@ -1,15 +1,15 @@
 //
-//  LokiNetworkTests.swift
-//  LokiNetworkTests
+//  LokiTunnelHostTests.swift
+//  LokiTunnelHostTests
 //
 //  Created by Lilac on 15/12/18.
 //  Copyright © 2018 Loki Project. All rights reserved.
 //
 
 import XCTest
-@testable import LokiNetwork
+@testable import LokiTunnelHost
 
-class LokiNetworkTests: XCTestCase {
+class LokiTunnelHostTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
