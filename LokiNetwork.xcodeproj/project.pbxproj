@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0648C43D21C410600038FBF8 /* LokiNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0648C43321C410600038FBF8 /* LokiNetwork.framework */; };
-		0648C44221C410600038FBF8 /* LokiNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0648C44121C410600038FBF8 /* LokiNetworkTests.swift */; };
-		0648C44421C410600038FBF8 /* LokiNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 0648C43621C410600038FBF8 /* LokiNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0648C47421C417490038FBF8 /* liblokinet-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0648C46521C411B90038FBF8 /* liblokinet-static.a */; };
+		0648C48221C41BA20038FBF8 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0648C48121C41BA20038FBF8 /* PacketTunnelProvider.swift */; };
+		0648C48821C41BBC0038FBF8 /* liblokinet-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0648C46521C411B90038FBF8 /* liblokinet-static.a */; };
+		0648C49321C41C7B0038FBF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0648C49221C41C7B0038FBF8 /* AppDelegate.swift */; };
+		0648C49521C41C7B0038FBF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0648C49421C41C7B0038FBF8 /* ViewController.swift */; };
+		0648C49821C41C7B0038FBF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0648C49621C41C7B0038FBF8 /* Main.storyboard */; };
+		0648C49B21C41C7B0038FBF8 /* LokiTunnelHost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0648C49921C41C7B0038FBF8 /* LokiTunnelHost.xcdatamodeld */; };
+		0648C49D21C41C820038FBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0648C49C21C41C820038FBF8 /* Assets.xcassets */; };
+		0648C4A021C41C830038FBF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0648C49E21C41C830038FBF8 /* LaunchScreen.storyboard */; };
+		0648C4AB21C41C830038FBF8 /* LokiTunnelHostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0648C4AA21C41C830038FBF8 /* LokiTunnelHostTests.swift */; };
+		0648C4B621C41C830038FBF8 /* LokiTunnelHostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0648C4B521C41C830038FBF8 /* LokiTunnelHostUITests.swift */; };
+		0648C4C321C41D6C0038FBF8 /* INIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0648C4C121C41D6C0038FBF8 /* INIParser.swift */; };
+		0648C4C421C41D6C0038FBF8 /* LokinetConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0648C4C221C41D6C0038FBF8 /* LokinetConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0648C43E21C410600038FBF8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0648C42A21C410600038FBF8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0648C43221C410600038FBF8;
-			remoteInfo = LokiNetwork;
-		};
 		0648C45A21C411B90038FBF8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0648C44D21C411B90038FBF8 /* lokinet.xcodeproj */;
@@ -70,32 +71,74 @@
 			remoteGlobalIDString = 5FE842310AC84ECD8A66A2F8;
 			remoteInfo = testAll;
 		};
+		0648C4A721C41C830038FBF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0648C42A21C410600038FBF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0648C48F21C41C7B0038FBF8;
+			remoteInfo = LokiTunnelHost;
+		};
+		0648C4B221C41C830038FBF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0648C42A21C410600038FBF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0648C48F21C41C7B0038FBF8;
+			remoteInfo = LokiTunnelHost;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0648C43321C410600038FBF8 /* LokiNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LokiNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0648C43621C410600038FBF8 /* LokiNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LokiNetwork.h; sourceTree = "<group>"; };
-		0648C43721C410600038FBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0648C43C21C410600038FBF8 /* LokiNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LokiNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0648C44121C410600038FBF8 /* LokiNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiNetworkTests.swift; sourceTree = "<group>"; };
-		0648C44321C410600038FBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0648C44D21C411B90038FBF8 /* lokinet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = lokinet.xcodeproj; path = "external/loki-network-build/lokinet.xcodeproj"; sourceTree = "<group>"; };
+		0648C47F21C41BA20038FBF8 /* LokiTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LokiTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0648C48121C41BA20038FBF8 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		0648C48321C41BA20038FBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0648C48421C41BA20038FBF8 /* LokiTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LokiTunnel.entitlements; sourceTree = "<group>"; };
+		0648C48921C41BD10038FBF8 /* LokiTunnel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LokiTunnel-Bridging-Header.h"; sourceTree = "<group>"; };
+		0648C49021C41C7B0038FBF8 /* LokiTunnelHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LokiTunnelHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0648C49221C41C7B0038FBF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0648C49421C41C7B0038FBF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0648C49721C41C7B0038FBF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0648C49A21C41C7B0038FBF8 /* LokiTunnelHost.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LokiTunnelHost.xcdatamodel; sourceTree = "<group>"; };
+		0648C49C21C41C820038FBF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0648C49F21C41C830038FBF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0648C4A121C41C830038FBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0648C4A621C41C830038FBF8 /* LokiTunnelHostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LokiTunnelHostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0648C4AA21C41C830038FBF8 /* LokiTunnelHostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiTunnelHostTests.swift; sourceTree = "<group>"; };
+		0648C4AC21C41C830038FBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0648C4B121C41C830038FBF8 /* LokiTunnelHostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LokiTunnelHostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0648C4B521C41C830038FBF8 /* LokiTunnelHostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiTunnelHostUITests.swift; sourceTree = "<group>"; };
+		0648C4B721C41C830038FBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0648C4C121C41D6C0038FBF8 /* INIParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INIParser.swift; sourceTree = "<group>"; };
+		0648C4C221C41D6C0038FBF8 /* LokinetConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokinetConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0648C43021C410600038FBF8 /* Frameworks */ = {
+		0648C47C21C41BA20038FBF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0648C47421C417490038FBF8 /* liblokinet-static.a in Frameworks */,
+				0648C48821C41BBC0038FBF8 /* liblokinet-static.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0648C43921C410600038FBF8 /* Frameworks */ = {
+		0648C48D21C41C7B0038FBF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0648C43D21C410600038FBF8 /* LokiNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0648C4A321C41C830038FBF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0648C4AE21C41C830038FBF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +149,10 @@
 			isa = PBXGroup;
 			children = (
 				0648C44D21C411B90038FBF8 /* lokinet.xcodeproj */,
-				0648C43521C410600038FBF8 /* LokiNetwork */,
-				0648C44021C410600038FBF8 /* LokiNetworkTests */,
+				0648C48021C41BA20038FBF8 /* LokiTunnel */,
+				0648C49121C41C7B0038FBF8 /* LokiTunnelHost */,
+				0648C4A921C41C830038FBF8 /* LokiTunnelHostTests */,
+				0648C4B421C41C830038FBF8 /* LokiTunnelHostUITests */,
 				0648C43421C410600038FBF8 /* Products */,
 				0648C46921C417490038FBF8 /* Frameworks */,
 			);
@@ -116,28 +161,12 @@
 		0648C43421C410600038FBF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0648C43321C410600038FBF8 /* LokiNetwork.framework */,
-				0648C43C21C410600038FBF8 /* LokiNetworkTests.xctest */,
+				0648C47F21C41BA20038FBF8 /* LokiTunnel.appex */,
+				0648C49021C41C7B0038FBF8 /* LokiTunnelHost.app */,
+				0648C4A621C41C830038FBF8 /* LokiTunnelHostTests.xctest */,
+				0648C4B121C41C830038FBF8 /* LokiTunnelHostUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		0648C43521C410600038FBF8 /* LokiNetwork */ = {
-			isa = PBXGroup;
-			children = (
-				0648C43621C410600038FBF8 /* LokiNetwork.h */,
-				0648C43721C410600038FBF8 /* Info.plist */,
-			);
-			path = LokiNetwork;
-			sourceTree = "<group>";
-		};
-		0648C44021C410600038FBF8 /* LokiNetworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				0648C44121C410600038FBF8 /* LokiNetworkTests.swift */,
-				0648C44321C410600038FBF8 /* Info.plist */,
-			);
-			path = LokiNetworkTests;
 			sourceTree = "<group>";
 		};
 		0648C44E21C411B90038FBF8 /* Products */ = {
@@ -161,55 +190,123 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0648C48021C41BA20038FBF8 /* LokiTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				0648C4C121C41D6C0038FBF8 /* INIParser.swift */,
+				0648C4C221C41D6C0038FBF8 /* LokinetConfiguration.swift */,
+				0648C48121C41BA20038FBF8 /* PacketTunnelProvider.swift */,
+				0648C48321C41BA20038FBF8 /* Info.plist */,
+				0648C48421C41BA20038FBF8 /* LokiTunnel.entitlements */,
+				0648C48921C41BD10038FBF8 /* LokiTunnel-Bridging-Header.h */,
+			);
+			path = LokiTunnel;
+			sourceTree = "<group>";
+		};
+		0648C49121C41C7B0038FBF8 /* LokiTunnelHost */ = {
+			isa = PBXGroup;
+			children = (
+				0648C49221C41C7B0038FBF8 /* AppDelegate.swift */,
+				0648C49421C41C7B0038FBF8 /* ViewController.swift */,
+				0648C49621C41C7B0038FBF8 /* Main.storyboard */,
+				0648C49C21C41C820038FBF8 /* Assets.xcassets */,
+				0648C49E21C41C830038FBF8 /* LaunchScreen.storyboard */,
+				0648C4A121C41C830038FBF8 /* Info.plist */,
+				0648C49921C41C7B0038FBF8 /* LokiTunnelHost.xcdatamodeld */,
+			);
+			path = LokiTunnelHost;
+			sourceTree = "<group>";
+		};
+		0648C4A921C41C830038FBF8 /* LokiTunnelHostTests */ = {
+			isa = PBXGroup;
+			children = (
+				0648C4AA21C41C830038FBF8 /* LokiTunnelHostTests.swift */,
+				0648C4AC21C41C830038FBF8 /* Info.plist */,
+			);
+			path = LokiTunnelHostTests;
+			sourceTree = "<group>";
+		};
+		0648C4B421C41C830038FBF8 /* LokiTunnelHostUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0648C4B521C41C830038FBF8 /* LokiTunnelHostUITests.swift */,
+				0648C4B721C41C830038FBF8 /* Info.plist */,
+			);
+			path = LokiTunnelHostUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		0648C42E21C410600038FBF8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0648C44421C410600038FBF8 /* LokiNetwork.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		0648C43221C410600038FBF8 /* LokiNetwork */ = {
+		0648C47E21C41BA20038FBF8 /* LokiTunnel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0648C44721C410600038FBF8 /* Build configuration list for PBXNativeTarget "LokiNetwork" */;
+			buildConfigurationList = 0648C48521C41BA20038FBF8 /* Build configuration list for PBXNativeTarget "LokiTunnel" */;
 			buildPhases = (
-				0648C42E21C410600038FBF8 /* Headers */,
-				0648C42F21C410600038FBF8 /* Sources */,
-				0648C43021C410600038FBF8 /* Frameworks */,
-				0648C43121C410600038FBF8 /* Resources */,
+				0648C47B21C41BA20038FBF8 /* Sources */,
+				0648C47C21C41BA20038FBF8 /* Frameworks */,
+				0648C47D21C41BA20038FBF8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LokiNetwork;
-			productName = LokiNetwork;
-			productReference = 0648C43321C410600038FBF8 /* LokiNetwork.framework */;
-			productType = "com.apple.product-type.framework";
+			name = LokiTunnel;
+			productName = LokiTunnel;
+			productReference = 0648C47F21C41BA20038FBF8 /* LokiTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
-		0648C43B21C410600038FBF8 /* LokiNetworkTests */ = {
+		0648C48F21C41C7B0038FBF8 /* LokiTunnelHost */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0648C44A21C410600038FBF8 /* Build configuration list for PBXNativeTarget "LokiNetworkTests" */;
+			buildConfigurationList = 0648C4B821C41C830038FBF8 /* Build configuration list for PBXNativeTarget "LokiTunnelHost" */;
 			buildPhases = (
-				0648C43821C410600038FBF8 /* Sources */,
-				0648C43921C410600038FBF8 /* Frameworks */,
-				0648C43A21C410600038FBF8 /* Resources */,
+				0648C48C21C41C7B0038FBF8 /* Sources */,
+				0648C48D21C41C7B0038FBF8 /* Frameworks */,
+				0648C48E21C41C7B0038FBF8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0648C43F21C410600038FBF8 /* PBXTargetDependency */,
 			);
-			name = LokiNetworkTests;
-			productName = LokiNetworkTests;
-			productReference = 0648C43C21C410600038FBF8 /* LokiNetworkTests.xctest */;
+			name = LokiTunnelHost;
+			productName = LokiTunnelHost;
+			productReference = 0648C49021C41C7B0038FBF8 /* LokiTunnelHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0648C4A521C41C830038FBF8 /* LokiTunnelHostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0648C4BB21C41C830038FBF8 /* Build configuration list for PBXNativeTarget "LokiTunnelHostTests" */;
+			buildPhases = (
+				0648C4A221C41C830038FBF8 /* Sources */,
+				0648C4A321C41C830038FBF8 /* Frameworks */,
+				0648C4A421C41C830038FBF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0648C4A821C41C830038FBF8 /* PBXTargetDependency */,
+			);
+			name = LokiTunnelHostTests;
+			productName = LokiTunnelHostTests;
+			productReference = 0648C4A621C41C830038FBF8 /* LokiTunnelHostTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0648C4B021C41C830038FBF8 /* LokiTunnelHostUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0648C4BE21C41C830038FBF8 /* Build configuration list for PBXNativeTarget "LokiTunnelHostUITests" */;
+			buildPhases = (
+				0648C4AD21C41C830038FBF8 /* Sources */,
+				0648C4AE21C41C830038FBF8 /* Frameworks */,
+				0648C4AF21C41C830038FBF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0648C4B321C41C830038FBF8 /* PBXTargetDependency */,
+			);
+			name = LokiTunnelHostUITests;
+			productName = LokiTunnelHostUITests;
+			productReference = 0648C4B121C41C830038FBF8 /* LokiTunnelHostUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -221,11 +318,20 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Loki Project";
 				TargetAttributes = {
-					0648C43221C410600038FBF8 = {
+					0648C47E21C41BA20038FBF8 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					0648C48F21C41C7B0038FBF8 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					0648C43B21C410600038FBF8 = {
+					0648C4A521C41C830038FBF8 = {
 						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0648C48F21C41C7B0038FBF8;
+					};
+					0648C4B021C41C830038FBF8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0648C48F21C41C7B0038FBF8;
 					};
 				};
 			};
@@ -235,6 +341,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0648C42921C410600038FBF8;
 			productRefGroup = 0648C43421C410600038FBF8 /* Products */;
@@ -247,8 +354,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				0648C43221C410600038FBF8 /* LokiNetwork */,
-				0648C43B21C410600038FBF8 /* LokiNetworkTests */,
+				0648C47E21C41BA20038FBF8 /* LokiTunnel */,
+				0648C48F21C41C7B0038FBF8 /* LokiTunnelHost */,
+				0648C4A521C41C830038FBF8 /* LokiTunnelHostTests */,
+				0648C4B021C41C830038FBF8 /* LokiTunnelHostUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,14 +415,31 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0648C43121C410600038FBF8 /* Resources */ = {
+		0648C47D21C41BA20038FBF8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0648C43A21C410600038FBF8 /* Resources */ = {
+		0648C48E21C41C7B0038FBF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0648C4A021C41C830038FBF8 /* LaunchScreen.storyboard in Resources */,
+				0648C49D21C41C820038FBF8 /* Assets.xcassets in Resources */,
+				0648C49821C41C7B0038FBF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0648C4A421C41C830038FBF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0648C4AF21C41C830038FBF8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,30 +449,75 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0648C42F21C410600038FBF8 /* Sources */ = {
+		0648C47B21C41BA20038FBF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0648C4C421C41D6C0038FBF8 /* LokinetConfiguration.swift in Sources */,
+				0648C48221C41BA20038FBF8 /* PacketTunnelProvider.swift in Sources */,
+				0648C4C321C41D6C0038FBF8 /* INIParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0648C43821C410600038FBF8 /* Sources */ = {
+		0648C48C21C41C7B0038FBF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0648C44221C410600038FBF8 /* LokiNetworkTests.swift in Sources */,
+				0648C49B21C41C7B0038FBF8 /* LokiTunnelHost.xcdatamodeld in Sources */,
+				0648C49521C41C7B0038FBF8 /* ViewController.swift in Sources */,
+				0648C49321C41C7B0038FBF8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0648C4A221C41C830038FBF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0648C4AB21C41C830038FBF8 /* LokiTunnelHostTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0648C4AD21C41C830038FBF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0648C4B621C41C830038FBF8 /* LokiTunnelHostUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0648C43F21C410600038FBF8 /* PBXTargetDependency */ = {
+		0648C4A821C41C830038FBF8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0648C43221C410600038FBF8 /* LokiNetwork */;
-			targetProxy = 0648C43E21C410600038FBF8 /* PBXContainerItemProxy */;
+			target = 0648C48F21C41C7B0038FBF8 /* LokiTunnelHost */;
+			targetProxy = 0648C4A721C41C830038FBF8 /* PBXContainerItemProxy */;
+		};
+		0648C4B321C41C830038FBF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0648C48F21C41C7B0038FBF8 /* LokiTunnelHost */;
+			targetProxy = 0648C4B221C41C830038FBF8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0648C49621C41C7B0038FBF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0648C49721C41C7B0038FBF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0648C49E21C41C830038FBF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0648C49F21C41C830038FBF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0648C44521C410600038FBF8 /* Debug */ = {
@@ -401,7 +572,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/external/loki-network/include/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -460,7 +630,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/external/loki-network/include/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -472,93 +641,188 @@
 			};
 			name = Release;
 		};
-		0648C44821C410600038FBF8 /* Debug */ = {
+		0648C48621C41BA20038FBF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LokiTunnel/LokiTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KQTFWV27W5;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = LokiNetwork/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/external/loki-network/include";
+				INFOPLIST_FILE = LokiTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.framework;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.LokiTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LokiTunnel/LokiTunnel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		0648C44921C410600038FBF8 /* Release */ = {
+		0648C48721C41BA20038FBF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LokiTunnel/LokiTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KQTFWV27W5;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = LokiNetwork/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/external/loki-network/include";
+				INFOPLIST_FILE = LokiTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.framework;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.LokiTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LokiTunnel/LokiTunnel-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		0648C44B21C410600038FBF8 /* Debug */ = {
+		0648C4B921C41C830038FBF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = KQTFWV27W5;
-				INFOPLIST_FILE = LokiNetworkTests/Info.plist;
+				INFOPLIST_FILE = LokiTunnelHost/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.LokiNetworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.LokiTunnelHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		0648C44C21C410600038FBF8 /* Release */ = {
+		0648C4BA21C41C830038FBF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = KQTFWV27W5;
-				INFOPLIST_FILE = LokiNetworkTests/Info.plist;
+				INFOPLIST_FILE = LokiTunnelHost/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.LokiNetworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.LokiTunnelHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0648C4BC21C41C830038FBF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQTFWV27W5;
+				INFOPLIST_FILE = LokiTunnelHostTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.LokiTunnelHostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LokiTunnelHost.app/LokiTunnelHost";
+			};
+			name = Debug;
+		};
+		0648C4BD21C41C830038FBF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQTFWV27W5;
+				INFOPLIST_FILE = LokiTunnelHostTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.LokiTunnelHostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LokiTunnelHost.app/LokiTunnelHost";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0648C4BF21C41C830038FBF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQTFWV27W5;
+				INFOPLIST_FILE = LokiTunnelHostUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.LokiTunnelHostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LokiTunnelHost;
+			};
+			name = Debug;
+		};
+		0648C4C021C41C830038FBF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQTFWV27W5;
+				INFOPLIST_FILE = LokiTunnelHostUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = network.loki.net.darwin.LokiTunnelHostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LokiTunnelHost;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -574,25 +838,56 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0648C44721C410600038FBF8 /* Build configuration list for PBXNativeTarget "LokiNetwork" */ = {
+		0648C48521C41BA20038FBF8 /* Build configuration list for PBXNativeTarget "LokiTunnel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0648C44821C410600038FBF8 /* Debug */,
-				0648C44921C410600038FBF8 /* Release */,
+				0648C48621C41BA20038FBF8 /* Debug */,
+				0648C48721C41BA20038FBF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0648C44A21C410600038FBF8 /* Build configuration list for PBXNativeTarget "LokiNetworkTests" */ = {
+		0648C4B821C41C830038FBF8 /* Build configuration list for PBXNativeTarget "LokiTunnelHost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0648C44B21C410600038FBF8 /* Debug */,
-				0648C44C21C410600038FBF8 /* Release */,
+				0648C4B921C41C830038FBF8 /* Debug */,
+				0648C4BA21C41C830038FBF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0648C4BB21C41C830038FBF8 /* Build configuration list for PBXNativeTarget "LokiTunnelHostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0648C4BC21C41C830038FBF8 /* Debug */,
+				0648C4BD21C41C830038FBF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0648C4BE21C41C830038FBF8 /* Build configuration list for PBXNativeTarget "LokiTunnelHostUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0648C4BF21C41C830038FBF8 /* Debug */,
+				0648C4C021C41C830038FBF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0648C49921C41C7B0038FBF8 /* LokiTunnelHost.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0648C49A21C41C7B0038FBF8 /* LokiTunnelHost.xcdatamodel */,
+			);
+			currentVersion = 0648C49A21C41C7B0038FBF8 /* LokiTunnelHost.xcdatamodel */;
+			path = LokiTunnelHost.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0648C42A21C410600038FBF8 /* Project object */;
 }
