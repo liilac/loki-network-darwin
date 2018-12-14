@@ -1,0 +1,13 @@
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/CMakeFiles/install.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/CMakeFiles/lokinet-platform.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/CMakeFiles/lokinet-static.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/CMakeFiles/lokinet.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/CMakeFiles/testAll.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/CMakeFiles/lokinet-cryptography.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/CMakeFiles/ALL_BUILD.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/CMakeFiles/ZERO_CHECK.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/CMakeFiles/install.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/CMakeFiles/gtest_main.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/CMakeFiles/gtest.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/CMakeFiles/ALL_BUILD.dir
+/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/CMakeFiles/ZERO_CHECK.dir

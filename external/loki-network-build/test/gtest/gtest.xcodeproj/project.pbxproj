@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		997442F89A764C97AFE9B108 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2E7A5FECFE024D948C22DA69 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				5135429AAE6D47FB827A7F94 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				70BB537C8F1C4183960066CA /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		C29FC55DDE234505AF9E3A36 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 50292138DBAF43A890E47150 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C3AC40EABC064045975AF628 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		DD9819445E724381869D2FCB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 76996BE99197466DA2D480D0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				BE94A4BDA3414591BC2B3223 /* CMake Rules */,
+			);
+			dependencies = (
+				4584C2B0768C40E7BF49B2B9 /* PBXTargetDependency */,
+				31C97B48B5914534860E19E3 /* PBXTargetDependency */,
+				CC5D4CE5E52C43A19B00556D /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		490A9A1742114AA0BEA4A3CB /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 79B8FE85C4D64FBDBF05335D /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/CMakeLists.txt */; };
+		51847E4172F840CCBD616DD9 /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/src/gtest-all.cc */ = {isa = PBXBuildFile; fileRef = 58D1CF3AA31F4434A4E36CAF /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/src/gtest-all.cc */; };
+		63B8FA694A224C3D9F581A99 /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D9764D842061434C98BEC21D /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/CMakeLists.txt */; };
+		65F94FBD9496483B9E69EDCB /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/src/gtest_main.cc */ = {isa = PBXBuildFile; fileRef = 559DEC8F93DA4A8CAB29B592 /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/src/gtest_main.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		2E1CE5CC8A7A4D689A6A71C8 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		79C72B7632E44DD784A22E1A /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		87C0192DE1554D7DB9687F60 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		BE7C40A8B81B4DF7A51C15AF /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		2FB61A65BB3847C68B3CC216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6731551EB9264DADB2C87A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B823AA3C17D84E738458E718;
+			remoteInfo = gtest;
+		};
+		6B21362F91ED46CEA664EB7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6731551EB9264DADB2C87A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C29FC55DDE234505AF9E3A36;
+			remoteInfo = ZERO_CHECK;
+		};
+		875D689F165A4A71AF907B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6731551EB9264DADB2C87A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9819445E724381869D2FCB;
+			remoteInfo = ALL_BUILD;
+		};
+		88D73A5305F54C5CAF88B8A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6731551EB9264DADB2C87A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C29FC55DDE234505AF9E3A36;
+			remoteInfo = ZERO_CHECK;
+		};
+		B371FDA395A24D149DB49D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6731551EB9264DADB2C87A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B823AA3C17D84E738458E718;
+			remoteInfo = gtest;
+		};
+		B78A4AEF6A0048C483D60847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6731551EB9264DADB2C87A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80097CBA1D2E452AA820DD55;
+			remoteInfo = gtest_main;
+		};
+		C4B2D71DBAC8448ABFC60E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6731551EB9264DADB2C87A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C29FC55DDE234505AF9E3A36;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19B25890FC324D8199DB3E81 /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		54839CA15AE54B1B990221EE /* gtest */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgtest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		559DEC8F93DA4A8CAB29B592 /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/src/gtest_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtest_main.cc; path = src/gtest_main.cc; sourceTree = SOURCE_ROOT; };
+		58D1CF3AA31F4434A4E36CAF /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/src/gtest-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-all.cc"; path = "src/gtest-all.cc"; sourceTree = SOURCE_ROOT; };
+		79B8FE85C4D64FBDBF05335D /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D800DABC06274FA799A0B85E /* gtest_main */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgtest_main.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9764D842061434C98BEC21D /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0133C79EA8EA4417A16C6939 /* gtest */ = {
+			isa = PBXGroup;
+			children = (
+				A9126D5F7E1945CC9478EFBB /* Source Files */,
+				79B8FE85C4D64FBDBF05335D /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/CMakeLists.txt */,
+			);
+			name = gtest;
+			sourceTree = "<group>";
+		};
+		10744851BBB24EBE8F01C32D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54839CA15AE54B1B990221EE /* gtest */,
+				D800DABC06274FA799A0B85E /* gtest_main */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		153D939AECB84383BF11485B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3D2B1BE6CFE345368441EECC /* gtest_main */ = {
+			isa = PBXGroup;
+			children = (
+				8804FFD5BFD54AB58D88E5F1 /* Source Files */,
+				D9764D842061434C98BEC21D /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/CMakeLists.txt */,
+			);
+			name = gtest_main;
+			sourceTree = "<group>";
+		};
+		7A5194DFD75B464AA09938A1 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				153D939AECB84383BF11485B /* CMake Rules */,
+				19B25890FC324D8199DB3E81 /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		8804FFD5BFD54AB58D88E5F1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				559DEC8F93DA4A8CAB29B592 /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/src/gtest_main.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A9126D5F7E1945CC9478EFBB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				58D1CF3AA31F4434A4E36CAF /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/src/gtest-all.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C3D057EA5E2F49F38D9383BE = {
+			isa = PBXGroup;
+			children = (
+				3D2B1BE6CFE345368441EECC /* gtest_main */,
+				0133C79EA8EA4417A16C6939 /* gtest */,
+				7A5194DFD75B464AA09938A1 /* ALL_BUILD */,
+				10744851BBB24EBE8F01C32D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80097CBA1D2E452AA820DD55 /* gtest_main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77EAF3ADA2E24A77A1FCAF81 /* Build configuration list for PBXNativeTarget "gtest_main" */;
+			buildPhases = (
+				BBE79616530D463AAD8CA389 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9C190C2D7D54AB283D78B48 /* PBXTargetDependency */,
+				CE880E74ED5A4BDAAF0293E0 /* PBXTargetDependency */,
+			);
+			name = gtest_main;
+			productName = gtest_main;
+			productReference = D800DABC06274FA799A0B85E /* gtest_main */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B823AA3C17D84E738458E718 /* gtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57769A03FF7F41A38FDA4338 /* Build configuration list for PBXNativeTarget "gtest" */;
+			buildPhases = (
+				EB6DE8A41A864EE5AF47B8D4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34A9C0C5C19C4B94931F37AC /* PBXTargetDependency */,
+			);
+			name = gtest;
+			productName = gtest;
+			productReference = 54839CA15AE54B1B990221EE /* gtest */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6731551EB9264DADB2C87A17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = D79FFFB3F63C41629C795161 /* Build configuration list for PBXProject "gtest" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				87C0192DE1554D7DB9687F60 /* Debug */,
+				BE7C40A8B81B4DF7A51C15AF /* Release */,
+				79C72B7632E44DD784A22E1A /* MinSizeRel */,
+				2E1CE5CC8A7A4D689A6A71C8 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = C3D057EA5E2F49F38D9383BE;
+			projectDirPath = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest";
+			projectRoot = "";
+			targets = (
+				DD9819445E724381869D2FCB /* ALL_BUILD */,
+				C29FC55DDE234505AF9E3A36 /* ZERO_CHECK */,
+				B823AA3C17D84E738458E718 /* gtest */,
+				80097CBA1D2E452AA820DD55 /* gtest_main */,
+				997442F89A764C97AFE9B108 /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5135429AAE6D47FB827A7F94 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest -f /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		63F9DDDBD36B4062B5109B25 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A899739540614FCC92464D21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		BE94A4BDA3414591BC2B3223 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest -f /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C3AC40EABC064045975AF628 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest -f /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		EB7E715C105647C5BC816970 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBE79616530D463AAD8CA389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F94FBD9496483B9E69EDCB /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/src/gtest_main.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6DE8A41A864EE5AF47B8D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51847E4172F840CCBD616DD9 /* /Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/src/gtest-all.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31C97B48B5914534860E19E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B823AA3C17D84E738458E718 /* gtest */;
+			targetProxy = B371FDA395A24D149DB49D9B /* PBXContainerItemProxy */;
+		};
+		34A9C0C5C19C4B94931F37AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C29FC55DDE234505AF9E3A36 /* ZERO_CHECK */;
+			targetProxy = 6B21362F91ED46CEA664EB7F /* PBXContainerItemProxy */;
+		};
+		4584C2B0768C40E7BF49B2B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80097CBA1D2E452AA820DD55 /* gtest_main */;
+			targetProxy = B78A4AEF6A0048C483D60847 /* PBXContainerItemProxy */;
+		};
+		70BB537C8F1C4183960066CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9819445E724381869D2FCB /* ALL_BUILD */;
+			targetProxy = 875D689F165A4A71AF907B93 /* PBXContainerItemProxy */;
+		};
+		CC5D4CE5E52C43A19B00556D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C29FC55DDE234505AF9E3A36 /* ZERO_CHECK */;
+			targetProxy = 88D73A5305F54C5CAF88B8A3 /* PBXContainerItemProxy */;
+		};
+		CE880E74ED5A4BDAAF0293E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C29FC55DDE234505AF9E3A36 /* ZERO_CHECK */;
+			targetProxy = C4B2D71DBAC8448ABFC60E54 /* PBXContainerItemProxy */;
+		};
+		E9C190C2D7D54AB283D78B48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B823AA3C17D84E738458E718 /* gtest */;
+			targetProxy = 2FB61A65BB3847C68B3CC216 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05CA177164A64EF3BBFC589A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/build";
+			};
+			name = RelWithDebInfo;
+		};
+		16745DA2B48549CEA2990C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'NETNS=0'","'GIT_REV=\"6a5dc38c\"'",Darwin,UNIX,POSIX);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/vendor/cppbackport-master/lib","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/crypto/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/llarp","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -DGTEST_HAS_PTHREAD=1   -Wall -Wextra -Werror -Wno-unknown-pragmas -Wno-unknown-warning-option -Wvla -fpermissive -Wno-unused-function -Wno-deprecated-declarations     '-march=core2' '-msse4.1' '-mtune=native' '-mfpmath=sse' '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1AAB91487E4C4498B56DCAD3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		29FAB83F4FE6413499BCC0E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'NETNS=0'","'GIT_REV=\"6a5dc38c\"'",Darwin,UNIX,POSIX);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/vendor/cppbackport-master/lib","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/crypto/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/llarp","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "     -DGTEST_HAS_PTHREAD=1   -Wall -Wextra -Werror -Wno-unknown-pragmas -Wno-unknown-warning-option -Wvla -fpermissive -Wno-unused-function -Wno-deprecated-declarations     '-march=core2' '-msse4.1' '-mtune=native' '-mfpmath=sse' '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		55E38F6D3F8F4A248E9AF066 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'NETNS=0'","'GIT_REV=\"6a5dc38c\"'",Darwin,UNIX,POSIX);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/vendor/cppbackport-master/lib","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/crypto/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/llarp","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -DGTEST_HAS_PTHREAD=1   -Wall -Wextra -Werror -Wno-unknown-pragmas -Wno-unknown-warning-option -Wvla -fpermissive -Wno-unused-function -Wno-deprecated-declarations     '-march=core2' '-msse4.1' '-mtune=native' '-mfpmath=sse' '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5D58E14B296543D1949ED770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		6751D3158CC54FB2B014BA92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7FFD0023809D45FB92D9699C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8F6C11D7AF864710B4663B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'NETNS=0'","'GIT_REV=\"6a5dc38c\"'",Darwin,UNIX,POSIX);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/vendor/cppbackport-master/lib","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/crypto/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/llarp","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "     -DGTEST_HAS_PTHREAD=1   -Wall -Wextra -Werror -Wno-unknown-pragmas -Wno-unknown-warning-option -Wvla -fpermissive -Wno-unused-function -Wno-deprecated-declarations     '-march=core2' '-msse4.1' '-mtune=native' '-mfpmath=sse' '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		95319001CDAB401298F5EF52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		953F4FB9625C4F1A8CCFE7DC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		95B762A7C45E4080A6F58256 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A436F2A6A74148C4A2593A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/build";
+			};
+			name = Debug;
+		};
+		BC8DA7B24FB54DBEB0C83419 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'NETNS=0'","'GIT_REV=\"6a5dc38c\"'",Darwin,UNIX,POSIX);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/vendor/cppbackport-master/lib","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/crypto/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/llarp","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG   -DGTEST_HAS_PTHREAD=1   -Wall -Wextra -Werror -Wno-unknown-pragmas -Wno-unknown-warning-option -Wvla -fpermissive -Wno-unused-function -Wno-deprecated-declarations     '-march=core2' '-msse4.1' '-mtune=native' '-mfpmath=sse' '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C843E6E6F3A042F68EF382FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CCC1ECE93F9446AB98D9EA0D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/build";
+			};
+			name = MinSizeRel;
+		};
+		D174EC2B972143D4915DBC3A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DEEA1C6CAED64D6F95B3B2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E1F7BBDB14C848F295BD548E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		EA5D09AD44F04F82BDAB7F64 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'NETNS=0'","'GIT_REV=\"6a5dc38c\"'",Darwin,UNIX,POSIX);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/vendor/cppbackport-master/lib","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/crypto/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/llarp","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -DGTEST_HAS_PTHREAD=1   -Wall -Wextra -Werror -Wno-unknown-pragmas -Wno-unknown-warning-option -Wvla -fpermissive -Wno-unused-function -Wno-deprecated-declarations     '-march=core2' '-msse4.1' '-mtune=native' '-mfpmath=sse' '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F1E237CF0DBC4A52BA99A613 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'NETNS=0'","'GIT_REV=\"6a5dc38c\"'",Darwin,UNIX,POSIX);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/vendor/cppbackport-master/lib","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/crypto/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/llarp","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG   -DGTEST_HAS_PTHREAD=1   -Wall -Wextra -Werror -Wno-unknown-pragmas -Wno-unknown-warning-option -Wvla -fpermissive -Wno-unused-function -Wno-deprecated-declarations     '-march=core2' '-msse4.1' '-mtune=native' '-mfpmath=sse' '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F66FA3A719744A50BE02C59E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest/build";
+			};
+			name = Release;
+		};
+		F8A1976CEF804E1FA17B0FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		FDBF67175A4A487DBC9CB9B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'NETNS=0'","'GIT_REV=\"6a5dc38c\"'",Darwin,UNIX,POSIX);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/vendor/cppbackport-master/lib","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/crypto/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/llarp","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest/include","/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network/test/gtest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -DGTEST_HAS_PTHREAD=1   -Wall -Wextra -Werror -Wno-unknown-pragmas -Wno-unknown-warning-option -Wvla -fpermissive -Wno-unused-function -Wno-deprecated-declarations     '-march=core2' '-msse4.1' '-mtune=native' '-mfpmath=sse' '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/lilac/Development/Loki/DarwinFresh/LokiNetwork/external/loki-network-build/test/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E7A5FECFE024D948C22DA69 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A1976CEF804E1FA17B0FF8 /* Debug */,
+				5D58E14B296543D1949ED770 /* Release */,
+				7FFD0023809D45FB92D9699C /* MinSizeRel */,
+				1AAB91487E4C4498B56DCAD3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		50292138DBAF43A890E47150 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95319001CDAB401298F5EF52 /* Debug */,
+				6751D3158CC54FB2B014BA92 /* Release */,
+				95B762A7C45E4080A6F58256 /* MinSizeRel */,
+				E1F7BBDB14C848F295BD548E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		57769A03FF7F41A38FDA4338 /* Build configuration list for PBXNativeTarget "gtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F6C11D7AF864710B4663B6A /* Debug */,
+				16745DA2B48549CEA2990C24 /* Release */,
+				EA5D09AD44F04F82BDAB7F64 /* MinSizeRel */,
+				BC8DA7B24FB54DBEB0C83419 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		76996BE99197466DA2D480D0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C843E6E6F3A042F68EF382FF /* Debug */,
+				DEEA1C6CAED64D6F95B3B2EB /* Release */,
+				953F4FB9625C4F1A8CCFE7DC /* MinSizeRel */,
+				D174EC2B972143D4915DBC3A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		77EAF3ADA2E24A77A1FCAF81 /* Build configuration list for PBXNativeTarget "gtest_main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29FAB83F4FE6413499BCC0E9 /* Debug */,
+				FDBF67175A4A487DBC9CB9B2 /* Release */,
+				55E38F6D3F8F4A248E9AF066 /* MinSizeRel */,
+				F1E237CF0DBC4A52BA99A613 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D79FFFB3F63C41629C795161 /* Build configuration list for PBXProject "gtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A436F2A6A74148C4A2593A75 /* Debug */,
+				F66FA3A719744A50BE02C59E /* Release */,
+				CCC1ECE93F9446AB98D9EA0D /* MinSizeRel */,
+				05CA177164A64EF3BBFC589A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6731551EB9264DADB2C87A17 /* Project object */;
+}
