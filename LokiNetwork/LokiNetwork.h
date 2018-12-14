@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char LokiNetworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <LokiNetwork/PublicHeader.h>
 
-
+// import libllarp C API
+#import <llarp.h>
